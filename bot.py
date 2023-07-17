@@ -16,7 +16,7 @@ plugins = dict(
 
 # logging.basicConfig(level=logging.DEBUG)
 print('>>> BOT STARTED')
-Client(
+bot = Client(
     "GabutzWhisperBot",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
