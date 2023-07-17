@@ -4,10 +4,11 @@ WORKDIR /app
 
 COPY requirements.txt /app/
 
-RUN pip3 install -U -r requirements.txt
+RUN virtualenv venv
+RUN venv/bin/pip3 install -U -r requirements.txt
 
 COPY . /app
 
 #set a default command
 
-CMD python3 bot.py
+CMD venv/bin/python3 bot.py
