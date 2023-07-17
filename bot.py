@@ -22,7 +22,7 @@ Client(
     api_hash = os.environ["API_HASH"],
     bot_token = os.environ["BOT_TOKEN"],
     plugins = plugins
-).run()
+)
 with open('data.json', 'w') as f:
     json.dump(whispers, f)
 print('\n>>> BOT STOPPED')
